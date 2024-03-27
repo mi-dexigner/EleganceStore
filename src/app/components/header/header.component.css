@@ -1,0 +1,96 @@
+.header-topbar{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    text-align: center;
+    min-height: 38px;
+}
+
+.header-topbar p{
+    font-size: .8em;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    flex:1 1 0px;
+    justify-content: flex-start;
+}
+.header-nav{position: relative;}
+.header-nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.header-nav ul li{margin: 0 6px;}
+.header-nav ul li a{font-size: 1rem;padding: 0 9px;position: relative;}
+.header-nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    display: block;
+    transition: .3s;
+    width: 0;
+    background: var(--black-color);
+    height: 2px;
+    -webkit-transition: var(--transition,.3s);
+    -moz-transition: var(--transition,.3s);
+    -ms-transition: var(--transition,.3s);
+    transition: var(--transition,.3s);
+ 
+}
+.header-nav ul li:hover a::before{
+    width: 100%;
+}
+.header-action{
+    flex:1 1 0px;
+    justify-content: flex-end;
+}
+.header-action ul{ list-style: none;display: flex;}
+.header-action ul li{
+    margin: 0 1em;
+    cursor: pointer;
+}
+.header-action ul li a{
+    text-decoration: none;
+}
+.header-action ul li svg{width: 24px;}
+.header-action .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .header-action .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    min-width: max-content;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+    font-size: .75em;
+    font-family: var(--font-family);
+  }
+  
+  .header-action .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
