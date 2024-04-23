@@ -2,46 +2,18 @@
 <section class="home-category">
   <div class="container">
     <div class="home--category-grid">
+      <ng-container *ngFor="let item of [].constructor(5); let i=index">
       <article>
         <a href="">
-          <img src="" alt="" class="loading">
+          <img #imageRef src="https://via.placeholder.com/300" alt="Category"  (error)="imageRef.classList.add('loading')" />
+
         </a>
         <div class="category--title">
           <a href="#" class="btn"> Category Name</a>
         </div>
       </article>
-      <article>
-        <a href="">
-          <img src="" alt="" class="loading">
-        </a>
-        <div class="category--title">
-          <a href="#" class="btn"> Category Name</a>
-        </div>
-      </article>
-      <article>
-        <a href="">
-          <img src="" alt="" class="loading">
-        </a>
-        <div class="category--title">
-          <a href="#" class="btn"> Category Name</a>
-        </div>
-      </article>
-      <article>
-        <div class="category--title">
-          <a href="">
-            <img src="" alt="" class="loading">
-          </a>
-          <a href="#" class="btn"> Category Name</a>
-        </div>
-      </article>
-      <article>
-        <div class="category--title">
-          <a href="">
-            <img src="" alt="" class="loading">
-          </a>
-          <a href="#" class="btn"> Category Name</a>
-        </div>
-      </article>
+    </ng-container>
+      
     </div>
   </div>
 </section>

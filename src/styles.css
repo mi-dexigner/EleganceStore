@@ -108,3 +108,19 @@ a {
         background-position: 10px
     }
 }
+
+
+.btn{
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+    transition: all .25s ease;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #000;
+}
